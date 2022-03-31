@@ -8,6 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 def setUp():
     global name,driver
     name = input("Enter name:")
+    # year = input("Enter the release year:")
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.maximize_window()
     yield
